@@ -1,0 +1,446 @@
+body{
+    background-color: #efefef;
+
+    margin: 0;
+    /*font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;*/
+    font-family: Hiragino Sans GB, Microsoft Yahei, serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+hr{
+    height: 0;
+    border: none;
+    border-top: 1px solid #dedede;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.topNavBar-inner{
+    padding: 0 16px;
+}
+.topNavBar{
+    padding: 22px 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    transition: all .5s;
+}
+.topNavBar{
+    a{float: left;}
+    nav{float: right;
+        ul{list-style: none;margin: 0;padding: 0;
+            li{float: left;margin-right: 19px;margin-left: 19px;position: relative;
+                a {
+                    color: #c0c2c6;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border-top: 3px solid transparent;
+                    border-bottom: 3px solid transparent;
+                    padding-top: 10px;
+                    padding-bottom: 4px;
+                    display: block;
+                    transition: 0.5s;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+
+.topNavBar nav > ul > li.highlight > a::after,
+.topNavBar nav > ul > li.active > a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;  /*bottom: 0;不能这样写*/
+    left: 0;
+    width: 100%;
+    background: #f85961;
+    height: 3px;
+    animation: menuBorder .6s;
+}
+@keyframes menuBorder {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+.topNavBar .subMenu{
+    color: #545a65;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    padding: 12px 16px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.topNavBar li.active .subMenu{
+    display: block;
+    animation: subMenuSlide .4s;
+}
+.topNavBar .subMenu li{
+    white-space: nowrap;
+}
+.topNavBar .subMenu li a{
+    padding: 6px 10px;
+    display: block;
+}
+.topNavBar .menu .subMenu li a:hover{
+    color: #e97579;
+}
+@keyframes subMenuSlide {
+    0%{
+        margin-right: 100%;
+        opacity: 0;
+    }
+    100%{
+        margin-right: 0;
+    }
+}
+.topNavBar .logo{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    font-size: 26px;
+    font-family: "Arial Black", serif;
+}
+.topNavBar .logo .rs{
+    margin-right: 4px;
+    color: #e8676b;
+}
+.topNavBar .logo .card{
+
+    color: #9a9da2;
+}
+.topNavBar.sticky nav > ul > li > a{
+    color: #5d6470;
+}
+.topNavBar.sticky{
+    background: white;
+    padding: 10px 0;
+    z-index: 1;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.banner{
+    height: 515px;
+    background: center url("../img/rs-cover-2-2-1-1.jpg");
+    background-size: cover;
+}
+.banner .mask{
+    height: 515px;
+    background: rgba(17%,17%,17%,0.8);
+}
+
+.userCard{
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 1px rgba(102,102,102,0.5);
+}
+.userCard .welcome{
+    background-color: #e8666a;
+    color: white;
+    display: inline-block;
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.userCard .welcome .triangle{
+    display: block;
+    border:10px solid transparent;
+    width:0px;
+    border-top-width:0px;
+    border-left-color:#e8666a;
+    position: absolute;
+    top:100%;
+    left: 5px;
+}
+.userCard .picture{
+    float: left;
+}
+.userCard .text{
+    float: left;
+    margin-left: 65px;
+    width: 420px;
+
+    /*font-family: Hiragino Sans GB;*/
+
+}
+.userCard .text h1{
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+.userCard .text hr{
+    margin: 20px 0;
+}
+.userCard .pictureAndText{
+    padding: 32px 50px;
+}
+.userCard dl dt,
+.userCard dl dd{
+    padding: 5px 0;
+    float: left;
+}
+.userCard dl dt{
+    font-weight: bold;
+    width: 30%;
+}
+.userCard dl dd{
+    color: #9da0a7;
+    width: 70%;
+}
+.userCard > footer.media{
+    background-color: #e8666a;
+    text-align: center;
+}
+.userCard > footer.media > a{
+    display: inline-block;
+    width: 48px;
+    line-height: 28px; /*和下面svg一样*/
+    padding: 10px 0;
+    border-radius: 50%;
+    margin: 14px;
+    transition: all 0.5s;
+}
+.userCard > footer.media > a:hover{
+    background-color: #d15c5f;
+}
+.userCard svg{
+    width: 28px;
+    height: 28px;
+    fill: white;
+    vertical-align: top;
+}
+.userCard .hexo{
+    width: 26px;
+    height: 26px;
+}
+.userCard .jian{
+    width: 23px;
+    height: 23px;
+    padding-top: 2px;
+}
+
+body > main{
+    margin-top: -320px;
+}
+body > main .downloadResume-wrapper{
+    text-align: center;
+}
+body > main .downloadResume{
+    padding: 18px 57px;
+    border: 1px solid #cbcdd0;
+    display: inline-block;
+    border-radius: 4px;
+    color: #484e58;
+    font-weight: bold;
+    margin: 38px 0 36px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+body > main .downloadResume:hover{
+    box-shadow: 0 6px 16px 1px rgba(102,102,102,0.4);
+}
+body > main .selfIntroduction{
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    font-family: Kai, serif;
+}
+
+section.skills{
+    max-width: 940px;
+    margin: 60px auto 72px;
+    /*margin-right: ;*/
+    /*margin-left: auto;*/
+}
+section.portfolio{
+    max-width: 920px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+section.skills > h2,
+section.message > h2,
+section.portfolio > h2{
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+
+}
+section.skills > ol > li > p{
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+section.skills > ol{
+    box-shadow: 0 1px 3px 1px rgba(102,102,102,0.5);
+    background-color: white;
+    padding: 42px 40px 15px;
+    margin-top: 30px;
+}
+section.skills > ol > li{
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+section.skills > ol > li:nth-child(even){
+    float: right;
+}
+section.skills .progressBar{
+    height: 5px;
+    background-color: #fae0e0;
+    border-radius: 4px;
+    margin: 4px 0 40px;
+    overflow: hidden;
+}
+section.skills .progress{
+    height: 100%;
+    background-color: #e8666a;
+    width: 50%;
+    border-radius: 8px;
+    transform: translateX(0);
+    transition: all 1.2s;
+}
+section.skills.offset .progress{
+    transform: translateX(-100%);
+}
+
+section.portfolio{
+    text-align: center;
+}
+section.portfolio > nav{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+section.portfolio > nav > ol{
+    display: inline-block;
+    vertical-align: top;
+}
+section.portfolio > nav > ol > li {
+    float: left;
+    margin-left: 50px;
+    cursor: pointer;
+}
+section.portfolio > nav > ol > li:first-child {
+    margin-left: 0;
+}
+section.portfolio > nav .bar{
+    height: 5px;
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+section.portfolio > nav .bar-inner{
+    background: #e8666a;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+section.portfolio > nav .bar.state-1 .bar-inner{
+    margin-left: -4px;
+    width: 46px;
+}
+section.portfolio > nav .bar.state-2 .bar-inner{
+    margin-left: 68px;
+    width: 60px;
+}
+section.portfolio > nav .bar.state-3 .bar-inner{
+    margin-left: 146px;
+    width: 64px;
+
+}
+
+
+.portfolio .works{
+    position: relative;
+    margin-bottom: 300px;
+}
+.portfolio .works .big,
+.portfolio .works .small{
+    position: absolute;
+}
+
+.site-welcome{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #eee;
+}
+.site-welcome.active{
+    display: block;
+}
+
+[data-x].offset{
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+[data-x]{
+    transform: translateY(0);
+    transition: all 1s;
+    opacity: 1;
+}
+
+section.message > ol{
+    max-width: 940px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    background: #f4f4f4;
+}
+
+section.message > ol > li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+
+}

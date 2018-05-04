@@ -1,0 +1,84 @@
+.userCard {
+    width: 90%;
+}
+.userCard .welcome{
+    display: none;
+}
+.userCard .picture {
+    width: auto;
+    height: auto;
+    max-width: 70%;
+    max-height: 70%;
+    float: none;
+    margin: 0 auto;
+
+}
+.userCard .text {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.userCard .text h1 {
+    margin-top: 18px;
+    margin-bottom: 5px; }
+.userCard > footer.media {
+    display: none; }
+
+
+section.portfolio {
+    max-width: 1200px;
+    margin: 25px auto 35px;
+}
+
+.works > ol{
+    display: flex;
+}
+.works > ol > li{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px;
+}
+
+section.skills {
+    width: 95%;
+    margin: 30px auto 62px;
+}
+
+
+section.skills ol > li > h3{
+    font-size: 16px;
+    line-height: .8;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+section.skills > ol > li > p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0;
+    }
+
+section.skills > ol {
+    box-shadow: 0 1px 6px 4px rgba(102, 102, 102, 0.1);
+    background-color: white;
+    padding: 5px;
+    padding-top: 20px;
+    margin-top: 30px; }
+
+section.skills > ol > li {
+    width: 100%;
+     }
+
+section.education >div{
+    width: 95%;
+    margin: 20px auto 40px;
+    padding: 10px;
+    font-family: Kai, serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+section.message > ol {
+    width: 95%;
+    margin: 20px auto 20px;
+     }
