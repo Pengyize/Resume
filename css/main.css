@@ -265,6 +265,14 @@ section.skills {
   max-width: 940px;
   margin: 30px auto 102px;
    }
+section.skills ol > li > h3{
+  font-size: 16px;
+  line-height: .8;
+  font-weight: 600;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 7px;
+}
 section.education >div{
   max-width: 940px;
   margin: 20px auto 130px;
