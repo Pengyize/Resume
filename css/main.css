@@ -97,6 +97,7 @@ img{
   background: white;
   height: 3px;
   animation: menuBorder .6s; }
+
 .topNavBar.sticky nav > ul > li.highlight > a::after,
 .topNavBar.sticky nav > ul > li.active > a::after {
   background: #333333;
@@ -196,7 +197,7 @@ img{
 
 .userCard dl dt {
   font-weight: bold;
-  width: 30%; }
+  width: 20%; }
 
 .userCard dl dd {
   color: #9da0a7;
@@ -341,19 +342,6 @@ section.portfolio > nav .bar-inner {
   height: 100%;
   border-radius: 5px;
   transition: all 0.5s; }
-
-section.portfolio > nav .bar.state-1 .bar-inner {
-  margin-left: -4px;
-  width: 46px; }
-
-section.portfolio > nav .bar.state-2 .bar-inner {
-  margin-left: 68px;
-  width: 60px; }
-
-section.portfolio > nav .bar.state-3 .bar-inner {
-  margin-left: 146px;
-  width: 64px; }
-
 
 
 .site-welcome {

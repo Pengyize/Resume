@@ -1,10 +1,9 @@
-.topNavBar-inner > .logo{
-    text-align: center;
+.topNavBar{
+    width: 100%;
 }
 
-
 .userCard {
-    width: 90%;
+    width: 95%;
 }
 .userCard .welcome{
     display: none;
@@ -87,3 +86,7 @@ section.message > ol {
     width: 95%;
     margin: 20px auto 20px;
      }
+
+.site-welcome{
+    display: none;
+}
