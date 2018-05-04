@@ -1,10 +1,10 @@
 !function(){
     window.sr = ScrollReveal();
-    sr.reveal('.scrollMain', { duration: 700 });
-    sr.reveal('.scrollSkill', { origin: 'top',duration: 700 });
-    sr.reveal('.scrollWorks', { origin: 'top',duration: 700 });
-    sr.reveal('.education', { duration: 700 });
-    sr.reveal('.message', { duration: 700 });
+    sr.reveal('.scrollMain', { duration: 1000 });
+    sr.reveal('.scrollSkill', { duration: 1000 });
+    sr.reveal('.scrollWorks', { duration: 1000 });
+    sr.reveal('.education', { duration: 1000 });
+    sr.reveal('.message', { duration: 1000 });
 
     findClosestAndAddHighlight();
 
