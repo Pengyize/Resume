@@ -87,7 +87,10 @@ section.message > ol {
     margin: 20px auto 20px;
      }
 
-.site-welcome{
+#siteWelcome{
+    display: none;
+}
+#siteWelcome > .loading{
     display: none;
 }
 
