@@ -1,5 +1,5 @@
 !function(){
-    window.sr = ScrollReveal({reset:true});
+    window.sr = ScrollReveal();
     sr.reveal('.scrollMain', { duration: 700 });
     sr.reveal('.scrollSkill', { duration: 700 });
     sr.reveal('.scrollWorks', { duration: 700 });

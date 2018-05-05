@@ -32,7 +32,9 @@
     margin-bottom: 5px; }
 .userCard > footer.media {
     display: none; }
-
+.userCard > .pictureAndText{
+    margin-bottom: 65px;
+}
 
 section.portfolio {
     max-width: 1200px;
@@ -103,3 +105,6 @@ section.message > ol {
 .userCard .address{
     display: none;
 }
+
+body > main .downloadResume{
+    display: none}

@@ -259,7 +259,7 @@ body > main .downloadResume {
   border-radius: 4px;
   color: #484e58;
   font-weight: bold;
-  margin: 38px 0 36px;
+  margin: 38px 0 26px;
   text-align: center;
   transition: box-shadow 0.3s; }
 
@@ -283,7 +283,7 @@ section.skills ol > li > h3{
   border-bottom: 1px solid #ddd;
   padding-bottom: 7px;
 }
-section.education >div{
+section.education > div{
   max-width: 940px;
   margin: 20px auto 130px;
   padding: 10px;
@@ -317,7 +317,7 @@ section.skills > ol {
   box-shadow: 0 1px 6px 4px rgba(102, 102, 102, 0.1);
   background-color: white;
   padding: 22px 20px 5px;
-  margin-top: 30px; }
+  margin-top: 38px; }
 
 section.skills > ol > li {
   float: left;
@@ -391,7 +391,7 @@ section.message > ol > li {
   border-bottom: 1px solid #ddd; }
 
 .works{
-
+  margin-top: 18px;
 }
 .works > ol{
   display: flex;
