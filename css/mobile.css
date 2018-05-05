@@ -2,9 +2,6 @@
     padding: 0 14px;
 }
 
-
-
-
 .userCard {
     width: 95%;
 }
@@ -100,5 +97,9 @@ section.message > ol {
      }
 .userCard .age,
 .userCard .address{
+    display: none;
+}
+
+#particles-js.active{
     display: none;
 }
