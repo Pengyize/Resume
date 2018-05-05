@@ -32,20 +32,6 @@ img{
   width: 100%;
 }
 
-#particles-js{
-  height: 100%;
-  background: #333;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  display: none;
-}
-#particles-js.active{
-  display: block;
-}
-
 
 .icon {
   width: 1em;
@@ -188,8 +174,16 @@ img{
   top: 100%;
   left: 5px; }
 
-.userCard .picture {
+.userCard .picturePC {
+  display: block;
   float: left; }
+.userCard .pictureMb{
+  display: none;
+}
+.userCard .picturePC > img,
+.userCard .pictureMb > img{
+    border-radius: 10px;
+}
 
 .userCard .text {
   float: left;

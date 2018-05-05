@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/pyz.gif" media="screen">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" media="(max-width:450px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="css/mobile.css">
 </head>
 
 <body>
@@ -45,8 +45,11 @@
 <main data-x  id="siteAbout" class="scrollMain">
     <div class="userCard">
         <div class="pictureAndText clearfix">
-            <div class="picture">
-                <img src="img/pyz.gif" alt="avatar">
+            <div class="picturePC">
+                <img src="img/pyzPC.jpg" alt="avatar">
+            </div>
+            <div class="pictureMb">
+                <img src="img/pyzMB.jpg" alt="avatar">
             </div>
 
             <div class="text">
@@ -208,8 +211,7 @@
 <script src='js/lib/Tween.js'></script>
 <script src="//cdn1.lncld.net/static/js/3.6.5/av-min.js"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script src="js/lib/particles.js"></script>
-<script src="js/lib/app.js"> </script>
+
 <!--模块化-->
 <script src="js/base/View.js"></script>
 <script src="js/base/Model.js"></script>
@@ -220,6 +222,5 @@
 <script src="js/topNavBar-subSlide.js"></script>
 <script src="js/message.js"></script>
 <script src="js/removeLoading.js"></script>
-<script src="js/removeParticle.js"></script>
 </body>
 </html>
