@@ -398,6 +398,7 @@ section.message > ol > li {
   flex-wrap: wrap;
 }
 .works > ol > li{
+  display: flex;
   box-sizing: border-box;
   width: 50%;
   padding: 20px;

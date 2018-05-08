@@ -12,12 +12,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    animation: loadingCircle 1.5s linear infinite;
-}
-
-.loading::after{
-    animation-delay: 0.75s;
-
+    animation: loadingCircle 1.5s ease-in infinite;
 }
 
 @keyframes loadingCircle {

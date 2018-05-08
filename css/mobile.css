@@ -1,5 +1,5 @@
 .topNavBar-inner {
-    padding: 0 14px;
+    padding: 0 6px;
 }
 
 .userCard {
@@ -13,9 +13,7 @@
 }
 .userCard .pictureMb{
     width: auto;
-    height: auto;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 60%;
     float: none;
     margin: 0 auto;
     display: block;
