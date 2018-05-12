@@ -2,7 +2,11 @@
     window.sr = ScrollReveal();
     sr.reveal('.scrollMain', { duration: 700 });
     sr.reveal('.scrollSkill', { duration: 700 });
-    sr.reveal('.scrollWorks', { duration: 700 });
+    sr.reveal('.worksTitle', { duration: 700 });
+    sr.reveal('.works1', { duration: 700 });
+    sr.reveal('.works2', { duration: 700 });
+    sr.reveal('.works3', { duration: 700 });
+    sr.reveal('.works4', { duration: 700 });
     sr.reveal('.education', { duration: 700 });
     sr.reveal('.message', { duration: 700 });
 

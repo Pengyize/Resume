@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: #efefef;
+  background-color: #f9fafc;
   margin: 0;
   height: 100vh;
   color: #333;
@@ -12,7 +12,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
    }
 
 hr {
@@ -28,10 +28,6 @@ h2, h3, h4, h5, h6 {
 h3{
   font-weight: bold;
 }
-img{
-  width: 100%;
-}
-
 
 .icon {
   width: 1em;
@@ -177,11 +173,11 @@ img{
 .userCard .picturePC {
   display: block;
   float: left; }
-.userCard .pictureMb{
+.userCard .pictureMB{
   display: none;
 }
-.userCard .picturePC > img,
-.userCard .pictureMb > img{
+.userCard .picturePC ,
+.userCard .pictureMB {
     border-radius: 10px;
 }
 
@@ -192,14 +188,16 @@ img{
  }
 
 .userCard .text h1 {
+  font-weight: bold;
   margin-top: 18px;
-  margin-bottom: 5px; }
+  margin-bottom: 10px; }
 
 .userCard .text hr {
   margin: 20px 0; }
 
 .userCard .pictureAndText {
   padding: 32px 50px; }
+
 
 .userCard dl dt,
 .userCard dl dd {
@@ -229,7 +227,7 @@ img{
   transition: all 0.5s; }
 
 .userCard > footer.media > a:hover {
-  background-color: #444; }
+  background-color: #555; }
 
 .userCard svg {
   width: 28px;
@@ -281,11 +279,12 @@ section.skills ol > li > h3{
   font-weight: 600;
   margin-bottom: 3px;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
+  margin-top: 1px;
 }
 section.education > div{
   max-width: 940px;
-  margin: 20px auto 130px;
+  margin: 20px auto 80px;
   padding: 10px;
   font-family: Kai, serif;
   font-size: 20px;
@@ -294,7 +293,7 @@ section.education > div{
 
 section.portfolio {
   max-width: 1200px;
-  margin: 65px auto 75px;
+  margin: 65px auto 55px;
    }
 
 section.skills > h2,
@@ -316,22 +315,21 @@ section.skills > ol > li > p {
 section.skills > ol {
   box-shadow: 0 1px 6px 4px rgba(102, 102, 102, 0.1);
   background-color: white;
-  padding: 22px 20px 5px;
+  padding: 26px 20px 0;
   margin-top: 38px; }
 
 section.skills > ol > li {
   float: left;
   width: 48%;
-  padding: 10px;
-  padding-bottom: 22px;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-bottom: 14px;
   box-sizing: border-box; }
 
 section.skills > ol > li:nth-child(even) {
   float: right; }
 
 
-section.portfolio {
-  text-align: center;}
 
 section.portfolio > nav {
   display: inline-block;
@@ -380,29 +378,122 @@ section.portfolio > nav .bar-inner {
 section.message{
   max-width: 940px;
   margin: 20px auto 60px;
+  box-sizing: border-box;
+}
+
+section.message > form {
+  margin-top: 41px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+section.message > form > div > label{
+  margin-right: 3px;
+}
+section.message > form > div > input{
+  margin-right: 20px;
+}
+section.message > form > label >input[type=text]{
+  margin-bottom: -5px;
+  border: 0;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 14px;
+  background: #fff;
+  font-weight: lighter;
+  box-shadow: -3px 4px 4px -4px rgba(51,51,51,0.35);
+  font-size: 18px;
+}
+section.message > form > label > .inputName{
+  width: 110px;
+}
+section.message > form > label > .inputContent{
+  width: 570px;
+}
+section.message > form > button{
+  text-align: center;
+  width: 75px;
+  background: #444;
+  font-size: 18px;
+  border: 0;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+section.message > form > button:hover{
+  background: #000;
+  color: white;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,.2);
+}
+section.message > form > button:focus{
+  outline: none;
+  color: white;
+  border: 0;
+  background: #444;
+}
+section.message > form > label >input[type=text]:focus{
+  outline: none;
 }
 section.message > ol {
-
-  box-shadow: 0 0 2px 2px rgba(120,120,120,.1);
+  box-shadow: 0 1px 6px 4px rgba(102, 102, 102, 0.1);
   background: #fff; }
-
 section.message > ol > li {
-  padding: 16px;
+  padding: 14px 0 12px 16px;
   border-bottom: 1px solid #ddd; }
+section.message > ol > li > .name{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+section.message > ol > li > .content{
+  color: #777;
+}
 
 .works{
-  margin-top: 18px;
+  margin-top: 48px;
 }
 .works > ol{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .works > ol > li{
   display: flex;
   box-sizing: border-box;
-  width: 50%;
-  padding: 20px;
+  width: 47%;
+  margin-bottom: 52px;
+  background: #fff;
+  box-shadow: -11px 16px 45px -20px rgba(0,0,0,0.18);
+  border-radius: 6px;
 }
-.works > ol > li > a > img{
-  float: left;
+.works > ol > li > .right{
+  padding: 24px 20px  0 20px;
 }
+.works > ol > li > .right > p{
+  padding-top: 15px;
+}
+.works > ol > li > .right > h3 {
+  width: 90%;
+  color: black;
+  padding-bottom: 8px ;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.works > ol > li > .right > h3 > a:hover{
+  color: #5f5f5f ;
+}
+
+.works > ol > li > .left > a > .MB{
+  display: none;
+}
+.works > ol > li > .left > a > img{
+  transition: all 0.3s;
+  vertical-align: top;
+  border-radius: 6px;
+}
+.works > ol > li > .left > a > img:hover{
+  box-shadow: 0px 3px 22px 0px rgba(0,0,0,0.37);
+}
+

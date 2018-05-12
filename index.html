@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>PengYiZe's Block</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/pyz.gif" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" media="(max-width:768px)" href="css/mobile.css">
@@ -15,6 +16,8 @@
 </head>
 
 <body>
+
+
 <div id="siteWelcome" class="site-welcome active">
     <div class="loading"></div>
 </div>
@@ -45,12 +48,8 @@
 <main data-x  id="siteAbout" class="scrollMain">
     <div class="userCard">
         <div class="pictureAndText clearfix">
-            <div class="picturePC">
-                <img src="img/pyzPC.jpg" alt="avatar">
-            </div>
-            <div class="pictureMb">
-                <img src="img/pyzMB.jpg" alt="avatar">
-            </div>
+            <img class="picturePC" style="height: 335px;width: 251px" src="img/pyzMB.jpg" alt="avatar">
+            <img class="pictureMB" src="img/pyzMB.jpg" alt="avatar">
 
             <div class="text">
                 <span class="welcome">你好，我是一名前端工程师
@@ -60,6 +59,7 @@
                 <p class="selfIntroduction">
                     就读于南京信息工程大学，熟悉 HTML/CSS/JS/VUE
                 </p>
+
                 <hr>
                 <dl class="clearfix">
                     <dt class="age">年龄</dt><dd class="age">21</dd><dt class="address">地址</dt><dd class="address">南京</dd><dt>邮箱</dt><dd>pyze@qq.com</dd><dt>微信</dt><dd>soulze</dd><dt>QQ</dt><dd>649786395</dd>
@@ -97,47 +97,56 @@
 </main>
 
 <section data-x id="siteWorks" class="portfolio scrollWorks">
-    <h2>作品</h2>
+    <h2 class="worksTitle">作品</h2>
     <div class="works">
         <ol>
-            <li>
+            <li class="works1">
                 <div class="left">
-                    <a target="_blank" href="/nav"><img src="img/nav-page2.jpg" alt="图片"></a>
+                    <a target="_blank" href="/nav">
+                        <img class="PC" style="width: 280px; height: 210px;" src="img/nav.jpg"  alt="图片">
+                        <img class="MB" src="img/nav.jpg"  alt="图片">
+                    </a>
                 </div>
                 <div class="right">
-                    <h3>小清新导航页</h3>
-                    <div><a target="_blank" href="/nav">预览链接</a><a target="_blank" href="https://github.com/Pengyize/nav">源码链接</a></div>
-                    <p>为键盘上的 26 个字母绑定了导航网址，敲击字母即可跳转至相应导航页面，还可以自定义每个键绑定的导航网址。主要利用原生 JavaScript 实现。</p>
+                    <h3><a target="_blank" href="/nav">键盘导航页 - <a target="_blank" href="https://github.com/Pengyize/nav">源码</a></a></h3>
+                    <p>利用原生 JavaScript 实现为键盘上的 26 个字母绑定导航网址，敲击字母即可跳转至相应导航页面，还可以自定义每个键绑定的导航网址。 </p>
                 </div>
             </li>
-            <li>
+            <li class="works2">
                 <div class="left">
-                    <a target="_blank" href="/canvas/"><img src="img/canvas-page2.jpg" alt="图片"></a>
+                    <a target="_blank" href="/canvas">
+                        <img class="PC" style="width: 280px; height: 210px" src="img/canvas.jpg"  alt="图片">
+                        <img class="MB" src="img/canvas.jpg" alt="">
+                    </a>
                 </div>
                 <div class="right">
-                    <p>在线画板</p>
-                    <div><a target="_blank" href="/canvas/">预览链接</a><a target="_blank" href="https://github.com/Pengyize/canvas-">源码链接</a></div>
-                    <p>在线画板，可以任意选择颜色、画笔类型、擦除、下载等，主要利用 &ltcanvas&gt 以及原生 JavaScript 实现。</p>
+                    <h3><a target="_blank" href="/canvas">奕泽画板 - <a target="_blank" href="https://github.com/Pengyize/canvas-">源码</a></a></h3>
+                    <p>该项目使用原生JS实现，主要调用 Canvas API，支持移动端使用，实现了画画、调色、橡皮擦、保存等功能。</p>
                 </div>
             </li>
-            <li>
+            <li class="works3">
                 <div class="left">
-                    <a target="_blank" href="/animation-resume/"><img src="img/resume.jpg" alt="图片"></a>
+                    <a target="_blank" href="/animation-resume">
+                        <img class="PC" style="width: 280px; height: 210px" src="img/web-cv.jpg"  alt="图片">
+                        <img class="MB" src="img/web-cv.jpg"  alt="图片">
+                    </a>
                 </div>
                 <div class="right">
-                    <p>会动的简历</p>
-                    <div><a target="_blank" href="/animation-resume/">预览链接</a><a target="_blank" href="https://github.com/Pengyize/animation-resume">源码链接</a></div>
-                    <p>利用动态向 &ltstyle&gt 标签添加样式以及 &ltpre&gt 标签添加文本，展示制作简历的过程</p>
+                    <h3><a target="_blank" href="/animation-resume">会动的简历 - <a target="_blank" href="https://github.com/Pengyize/animation-resume">源码</a></a></h3>
+                    <p>利用原生 JavaScript 动态向 &ltstyle&gt 标签添加样式以及 &ltpre&gt 标签添加文本，展示制作简历的过程</p>
                 </div>
+
             </li>
-            <li>
+            <li class="works4">
                 <div class="left">
-                    <a target="_blank" href="/Pikachu/"><img src="img/pikachu.png" alt="图片"></a>
+                    <a target="_blank" href="/Pikachu">
+                        <img class="PC" style="width: 280px; height: 210px" src="img/pikachu.jpg"  alt="图片">
+                        <img class="MB" src="img/pikachu.jpg"  alt="图片">
+                    </a>
                 </div>
                 <div class="right">
-                    <p>皮卡丘</p>
-                    <div><a target="_blank" href="/Pikachu/">预览链接</a><a target="_blank" href="https://github.com/Pengyize/Pikachu">源码链接</a></div>
-                    <p>利用动态向 &ltstyle&gt 标签添加样式以及 &ltpre&gt 标签添加文本，模拟绘制皮卡丘的过程。主要使用原生 JavaScript 以及 CSS3 实现。利用 prism.js 实现代码高亮。</p>
+                    <h3><a target="_blank" href="/Pikachu">皮卡丘 - <a target="_blank" href="https://github.com/Pengyize/Pikachu">源码</a></a></h3>
+                    <p>利用原生 JavaScript 动态向 &ltstyle&gt 标签添加样式以及 &ltpre&gt 标签添加文本。主要使用 CSS3 实现，利用 prism.js 实现代码高亮。</p>
                 </div>
             </li>
         </ol>
@@ -180,11 +189,22 @@
         </li>
         <li>
             <h3>
-                前端框架 - ★★★★☆
+                前端框架 - ★★★☆☆
             </h3>
             <p>理解 Mvc、MVVM 的思想，可以熟练使用相关的库，如 Vue</p>
         </li>
-
+        <li>
+            <h3>
+                小程序制作 - ★★☆☆☆
+            </h3>
+            <p>正在学习中......</p>
+        </li>
+        <li>
+            <h3>
+                HTTP 缓存、Cookie、Session - ★★★☆☆
+            </h3>
+            <p>了解客户端缓存、Cookie、session 等知识，并写了相应博客</p>
+        </li>
     </ol>
 </section>
 
@@ -199,13 +219,18 @@
 
 <section data-x id="siteMessages" class="message">
     <h2>留言</h2>
-    <form id="postMessageForm">
-        <label>姓名：<input type="text" name="name"></label><br>
-        <label>内容：<input type="text" name="content" placeholder="写下你的留言..."></label>
-        <input type="submit" value="提交">
+
+    <form id="postMessageForm" class="form-inline">
+        <div class="form-group">
+            <label for="exampleInputName2">姓名</label>
+            <input type="text" class="form-control" id="exampleInputName2" name="name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail2">内容</label>
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="写下你的留言..." name="content">
+        </div>
+        <button type="submit" class="btn btn-default">留言</button>
     </form>
-    <ol id="messageList">
-    </ol>
 </section>
 
 
@@ -225,5 +250,6 @@
 <script src="js/smoothly-to-anchor.js"></script>
 <script src="js/topNavBar-subSlide.js"></script>
 <script src="js/message.js"></script>
-    </body>
+<script src="js/removeLoading.js"></script>
+</body>
 </html>

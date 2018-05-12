@@ -1,30 +1,35 @@
+img{
+    width: 95%;
+}
 .userCard .welcome{
     display: none;
 }
-.userCard .picturePC{
+.userCard > div > .picturePC{
     display: none;
 }
-.userCard .pictureMb{
+.userCard > div > .pictureMB{
     width: auto;
-    height: auto;
-    max-width: 50%;
-    max-height: 50%;
-    float: none;
+    max-width: 60%;
     margin: 0 auto;
     display: block;
 }
 
 .topNavBar{
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom: -200px;
 }
 .userCard{
     margin-top: -50px;
 }
-
 .userCard{
     margin-top: -100px;
 }
 .message{
     display: none;
+}
+
+.works > ol > li > .left > a > .MB{
+    width: 77.2%;
+    margin-left: auto;
+    margin-right: auto;
 }
