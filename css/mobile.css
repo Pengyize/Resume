@@ -146,6 +146,9 @@ section.message > form {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+section.message > form > .form-group{
+    padding-top: 10px;
+}
 section.message > form > button{
     height: 34px;
     align-self: flex-end;
